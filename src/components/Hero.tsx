@@ -1,7 +1,37 @@
+import { useState } from 'react';
 import { MonitorSmartphone } from 'lucide-react';
-import { motion } from 'motion/react';
+import { motion, AnimatePresence } from 'motion/react';
 
 export default function Hero({ dict }: { dict: any }) {
+  const [showError, setShowError] = useState(false);
+
+  const handleDownload = async (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    try {
+      const response = await fetch('/z-enix.apk', { method: 'HEAD' });
+      const contentType = response.headers.get('content-type');
+      
+      // If the file exists and is not fallback HTML
+      if (response.ok && (!contentType || !contentType.includes('text/html'))) {
+        const link = document.createElement('a');
+        link.href = '/z-enix.apk';
+        link.download = 'z-enix.apk';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        return;
+      }
+    } catch (error) {
+      console.error(error);
+    }
+    
+    // File not found or error occurred
+    setShowError(true);
+    setTimeout(() => {
+      setShowError(false);
+    }, 3000);
+  };
+
   return (
     <section className="relative overflow-hidden pt-16 pb-24 lg:pt-32 lg:pb-40">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -34,14 +64,26 @@ export default function Hero({ dict }: { dict: any }) {
               {dict.subtitle}
             </p>
             
-            <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start" id="download">
-              <a href="/Z-enix.apk" download className="flex items-center justify-center gap-2 w-full sm:w-auto bg-slate-900 text-white px-5 py-2.5 rounded-lg font-bold transition-all hover:scale-105 hover:bg-slate-800 shadow-md shadow-slate-900/10">
+            <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start relative" id="download">
+              <a href="/z-enix.apk" onClick={handleDownload} className="flex items-center justify-center gap-2 w-full sm:w-auto bg-slate-900 text-white px-5 py-2.5 rounded-lg font-bold transition-all hover:scale-105 hover:bg-slate-800 shadow-md shadow-slate-900/10 z-20">
                 <MonitorSmartphone className="w-4 h-4" />
                 <div className="flex flex-col items-start leading-none gap-0.5">
                   <span className="text-[8px] uppercase tracking-wider opacity-80">{dict.downloadAndroid}</span>
                   <span className="text-sm mt-0.5">{dict.downloadAndroidOS}</span>
                 </div>
               </a>
+              <AnimatePresence>
+                {showError && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    className="absolute -top-14 bg-red-50 text-red-600 px-4 py-2 rounded-lg text-sm font-bold shadow-lg border border-red-100 whitespace-nowrap z-50 pointer-events-none"
+                  >
+                    {dict.notReleased}
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </div>
             
             <p className="text-sm text-slate-500 font-medium pt-4 tracking-wide">

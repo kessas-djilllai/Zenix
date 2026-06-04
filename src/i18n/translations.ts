@@ -14,6 +14,7 @@ export const translations = {
       subtitle: "Z-enix brings you a seamless mobile experience with cutting-edge technology, intuitive design, and smooth performance for your daily needs.",
       downloadAndroid: "Download for",
       downloadAndroidOS: "Android",
+      notReleased: "App not released yet",
       privacyPolicy: "Learn More",
       disclaimer: "* Compatible with all modern Android devices."
     },
@@ -69,6 +70,7 @@ export const translations = {
       subtitle: "يقدم لك Z-enix تجربة سلسة ومتطورة، مع تصميم عصري وأداء ممتاز لتلبية احتياجاتك اليومية بكل سهولة.",
       downloadAndroid: "تنزيل لنظام",
       downloadAndroidOS: "Android",
+      notReleased: "لم يتم اطلاق التطبيق بعد",
       privacyPolicy: "اعرف المزيد",
       disclaimer: "* متوافق مع كافة الأجهزة الحديثة التي تدعم أنظمة Android."
     },
