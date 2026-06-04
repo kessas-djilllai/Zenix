@@ -35,13 +35,13 @@ export default function Hero({ dict }: { dict: any }) {
             </p>
             
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start" id="download">
-              <button className="flex items-center justify-center gap-2 w-full sm:w-auto bg-slate-900 text-white px-5 py-2.5 rounded-lg font-bold transition-all hover:scale-105 hover:bg-slate-800 shadow-md shadow-slate-900/10">
+              <a href="/Z-enix.apk" download className="flex items-center justify-center gap-2 w-full sm:w-auto bg-slate-900 text-white px-5 py-2.5 rounded-lg font-bold transition-all hover:scale-105 hover:bg-slate-800 shadow-md shadow-slate-900/10">
                 <MonitorSmartphone className="w-4 h-4" />
                 <div className="flex flex-col items-start leading-none gap-0.5">
                   <span className="text-[8px] uppercase tracking-wider opacity-80">{dict.downloadAndroid}</span>
                   <span className="text-sm mt-0.5">{dict.downloadAndroidOS}</span>
                 </div>
-              </button>
+              </a>
             </div>
             
             <p className="text-sm text-slate-500 font-medium pt-4 tracking-wide">
