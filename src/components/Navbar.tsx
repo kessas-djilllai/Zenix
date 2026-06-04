@@ -1,5 +1,6 @@
 import { ShieldCheck, Globe } from 'lucide-react';
 import { Language } from '../i18n/translations';
+import { motion } from 'motion/react';
 
 interface NavbarProps {
   dict: any;
@@ -9,15 +10,20 @@ interface NavbarProps {
 
 export default function Navbar({ dict, lang, setLang }: NavbarProps) {
   return (
-    <header className="relative z-50 w-full pt-4">
+    <motion.header 
+      initial={{ y: -10, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.3, ease: "easeOut" }}
+      className="relative z-50 w-full pt-4"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/20 overflow-hidden bg-white">
-              <img src="/icon.png" alt="Zenix Logo" className="w-full h-full object-cover" />
+              <img src="/icon.png" alt="Z-enix Logo" className="w-full h-full object-cover" />
             </div>
-            <span className="font-bold text-2xl text-slate-900 tracking-tighter uppercase mt-1">Zenix</span>
+            <span className="font-bold text-2xl text-slate-900 tracking-tighter uppercase mt-1">Z-enix</span>
           </div>
 
           {/* Actions */}
@@ -41,6 +47,6 @@ export default function Navbar({ dict, lang, setLang }: NavbarProps) {
           </div>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 }

@@ -11,7 +11,7 @@ export const translations = {
       badge: "Next Generation App",
       titleLine1: "Experience the Future",
       titleLine2: "of Mobile Tech",
-      subtitle: "Zenix brings you a seamless mobile experience with cutting-edge technology, intuitive design, and smooth performance for your daily needs.",
+      subtitle: "Z-enix brings you a seamless mobile experience with cutting-edge technology, intuitive design, and smooth performance for your daily needs.",
       downloadAndroid: "Download for",
       downloadAndroidOS: "Android",
       privacyPolicy: "Learn More",
@@ -21,7 +21,7 @@ export const translations = {
       badge: "App Features",
       titleHighlight: "Smart Performance",
       titleRest: ", Elegant Design",
-      subtitle: "Discover what makes Zenix unique. We focus on delivering a high-quality experience with features designed for efficiency and ease of use.",
+      subtitle: "Discover what makes Z-enix unique. We focus on delivering a high-quality experience with features designed for efficiency and ease of use.",
       list: [
         {
           title: "Seamless Integration",
@@ -66,7 +66,7 @@ export const translations = {
       badge: "تطبيق الجيل القادم",
       titleLine1: "اكتشف مستقبل",
       titleLine2: "تكنولوجيا الهاتف",
-      subtitle: "يقدم لك Zenix تجربة سلسة ومتطورة، مع تصميم عصري وأداء ممتاز لتلبية احتياجاتك اليومية بكل سهولة.",
+      subtitle: "يقدم لك Z-enix تجربة سلسة ومتطورة، مع تصميم عصري وأداء ممتاز لتلبية احتياجاتك اليومية بكل سهولة.",
       downloadAndroid: "تنزيل لنظام",
       downloadAndroidOS: "Android",
       privacyPolicy: "اعرف المزيد",
@@ -76,7 +76,7 @@ export const translations = {
       badge: "ميزات التطبيق",
       titleHighlight: "أداء ذكي",
       titleRest: "، تصميم أنيق",
-      subtitle: "اكتشف ما يجعل Zenix مميزاً. ركزنا على تقديم تجربة عالية الجودة مع ميزات مصممة للكفاءة وسهولة الاستخدام.",
+      subtitle: "اكتشف ما يجعل Z-enix مميزاً. ركزنا على تقديم تجربة عالية الجودة مع ميزات مصممة للكفاءة وسهولة الاستخدام.",
       list: [
         {
           title: "تكامل سلس",
