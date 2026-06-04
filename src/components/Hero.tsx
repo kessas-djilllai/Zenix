@@ -22,9 +22,10 @@ export default function Hero({ dict }: { dict: any }) {
               <span className="text-xs font-bold uppercase tracking-wider text-blue-700">{dict.badge}</span>
             </div>
             
-            <h1 className="text-5xl lg:text-7xl font-extrabold text-slate-900 leading-[1.1] tracking-tight">
-              {dict.titleLine1} <br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r rtl:bg-gradient-to-l from-blue-600 to-indigo-600">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-slate-900 leading-[1.2] tracking-tight whitespace-pre-line">
+              {dict.titleLine1}
+              <span className="hidden rtl:inline"> </span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r rtl:bg-gradient-to-l from-blue-600 to-indigo-600 ltr:block">
                 {dict.titleLine2}
               </span>
             </h1>
@@ -62,7 +63,7 @@ export default function Hero({ dict }: { dict: any }) {
             >
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-slate-100 rounded-b-2xl z-20 border-b border-x border-slate-200"></div>
               <div className="w-full h-full rounded-[36px] bg-slate-50 overflow-hidden flex flex-col p-8 items-center justify-center gap-12 relative border border-slate-100 shadow-inner">
-                <div className="absolute top-20 right-0 w-32 h-32 bg-blue-400 rounded-full blur-[80px] opacity-20"></div>
+                <div className="absolute top-20 right-0 w-32 h-32 bg-blue-400 rounded-full blur-[80px] opacity-20 pointer-events-none transform-gpu"></div>
                 
                 {/* Advanced Conceptual App Icon Display */}
                 <div className="w-48 h-48 rounded-[2rem] flex items-center justify-center shadow-xl shadow-blue-600/20 border border-white/50 z-10 hover:scale-105 transition-transform duration-500 overflow-hidden bg-white/50">

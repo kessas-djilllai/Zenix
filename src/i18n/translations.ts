@@ -9,7 +9,7 @@ export const translations = {
     },
     hero: {
       badge: "Next Generation App",
-      titleLine1: "Experience the Future",
+      titleLine1: "Experience the\nFuture",
       titleLine2: "of Mobile Tech",
       subtitle: "Z-enix brings you a seamless mobile experience with cutting-edge technology, intuitive design, and smooth performance for your daily needs.",
       downloadAndroid: "Download for",

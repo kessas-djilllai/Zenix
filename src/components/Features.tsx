@@ -32,11 +32,10 @@ export default function Features({ dict }: { dict: any }) {
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-20px" }}
-                whileHover={{ y: -2 }}
                 transition={{ duration: 0.3, delay: index * 0.05, ease: "easeOut" }}
-                className="bg-white rounded-[36px] p-8 border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-900/5 transition-shadow duration-300 group relative overflow-hidden"
+                className="bg-white rounded-[36px] p-8 border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-900/5 hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden transform-gpu"
               >
-                <div className="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-full blur-[50px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                <div className="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-full blur-[50px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none transform-gpu"></div>
                 <div className="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center shadow-sm border border-slate-100 mb-6 group-hover:scale-110 transition-transform relative z-10">
                   <Icon className="w-7 h-7 text-blue-600" />
                 </div>
