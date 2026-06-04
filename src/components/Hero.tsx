@@ -16,23 +16,23 @@ export default function Hero({ dict }: { dict: any }) {
               <span className="text-xs font-bold uppercase tracking-wider text-blue-700">{dict.badge}</span>
             </div>
             
-            <h1 className="text-5xl lg:text-7xl font-extrabold text-slate-900 leading-[1.1] tracking-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.1] tracking-tight">
               {dict.titleLine1} <br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r rtl:bg-gradient-to-l from-blue-600 to-indigo-600">
                 {dict.titleLine2}
               </span>
             </h1>
             
-            <p className="text-lg text-slate-600 font-medium leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            <p className="text-base sm:text-lg text-slate-600 font-medium leading-relaxed max-w-2xl mx-auto lg:mx-0">
               {dict.subtitle}
             </p>
             
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start" id="download">
-              <button className="flex items-center justify-center gap-3 w-full sm:w-auto bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold transition-all hover:scale-105 hover:bg-slate-800 shadow-xl shadow-slate-900/10">
-                <MonitorSmartphone className="w-6 h-6" />
-                <div className="flex flex-col items-start leading-none gap-1">
-                  <span className="text-[10px] uppercase tracking-wider opacity-80">{dict.downloadAndroid}</span>
-                  <span className="text-lg mt-0.5">{dict.downloadAndroidOS}</span>
+              <button className="flex items-center justify-center gap-2.5 w-full sm:w-auto bg-slate-900 text-white px-6 py-3 rounded-xl font-bold transition-all hover:scale-105 hover:bg-slate-800 shadow-lg shadow-slate-900/10">
+                <MonitorSmartphone className="w-5 h-5" />
+                <div className="flex flex-col items-start leading-none gap-0.5">
+                  <span className="text-[9px] uppercase tracking-wider opacity-80">{dict.downloadAndroid}</span>
+                  <span className="text-base">{dict.downloadAndroidOS}</span>
                 </div>
               </button>
             </div>
@@ -50,10 +50,8 @@ export default function Hero({ dict }: { dict: any }) {
                 <div className="absolute top-20 right-0 w-32 h-32 bg-blue-400 rounded-full blur-[80px] opacity-20"></div>
                 
                 {/* Advanced Conceptual App Icon Display */}
-                <div className="w-48 h-48 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-[2rem] flex items-center justify-center shadow-xl shadow-blue-600/20 border border-white/50 z-10 hover:scale-105 transition-transform duration-500">
-                  <div className="w-24 h-24 border-4 border-white/90 rounded-2xl rotate-45 flex items-center justify-center">
-                     <div className="w-8 h-8 bg-white rounded-full shadow-lg"></div>
-                  </div>
+                <div className="w-48 h-48 rounded-[2rem] flex items-center justify-center shadow-xl shadow-blue-600/20 border border-white/50 z-10 hover:scale-105 transition-transform duration-500 overflow-hidden bg-white/50">
+                  <img src="/icon.png" alt="Zenix App Icon" className="w-full h-full object-cover" />
                 </div>
                 
                 <div className="z-10 flex flex-col items-center gap-4">

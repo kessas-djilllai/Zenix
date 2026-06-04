@@ -7,10 +7,8 @@ export default function Footer({ dict }: { dict: any }) {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center shadow-md shadow-blue-500/20">
-              <div className="w-4 h-4 border-[1.5px] border-white/90 rounded-sm rotate-45 flex items-center justify-center">
-                 <div className="w-1 h-1 bg-white rounded-full"></div>
-              </div>
+            <div className="w-8 h-8 rounded-lg flex items-center justify-center shadow-md shadow-blue-500/20 overflow-hidden bg-white">
+              <img src="/icon.png" alt="Zenix Logo" className="w-full h-full object-cover" />
             </div>
             <span className="font-bold text-lg text-slate-900 tracking-tighter uppercase mt-0.5">Zenix</span>
           </div>

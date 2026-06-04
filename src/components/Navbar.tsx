@@ -14,10 +14,8 @@ export default function Navbar({ dict, lang, setLang }: NavbarProps) {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/20">
-              <div className="w-6 h-6 border-2 border-white/90 rounded-sm rotate-45 flex items-center justify-center">
-                 <div className="w-2 h-2 bg-white rounded-full"></div>
-              </div>
+            <div className="w-10 h-10 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/20 overflow-hidden bg-white">
+              <img src="/icon.png" alt="Zenix Logo" className="w-full h-full object-cover" />
             </div>
             <span className="font-bold text-2xl text-slate-900 tracking-tighter uppercase mt-1">Zenix</span>
           </div>
