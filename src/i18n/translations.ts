@@ -8,10 +8,10 @@ export const translations = {
       switchLang: "العربية"
     },
     hero: {
-      badge: "Next Generation App",
-      titleLine1: "Experience the\nFuture",
-      titleLine2: "of Mobile Tech",
-      subtitle: "Z-enix brings you a seamless mobile experience with cutting-edge technology, intuitive design, and smooth performance for your daily needs.",
+      badge: "Advanced App Cloner",
+      titleLine1: "Run Multiple\nAccounts",
+      titleLine2: "Simultaneously",
+      subtitle: "Z-enix is a powerful virtual engine that allows you to clone and run multiple accounts of the same app simultaneously on one device.",
       downloadAndroid: "Download for",
       downloadAndroidOS: "Android",
       notReleased: "App not released yet",
@@ -19,33 +19,33 @@ export const translations = {
       disclaimer: "* Compatible with all modern Android devices."
     },
     features: {
-      badge: "App Features",
-      titleHighlight: "Smart Performance",
-      titleRest: ", Elegant Design",
-      subtitle: "Discover what makes Z-enix unique. We focus on delivering a high-quality experience with features designed for efficiency and ease of use.",
+      badge: "App Cloner",
+      titleHighlight: "Independent Spaces",
+      titleRest: ", Smooth Experience",
+      subtitle: "Discover what makes Z-enix unique. We focus on delivering a high-quality multi-account experience with features designed for efficiency and ease of use.",
       list: [
         {
-          title: "Seamless Integration",
-          desc: "Works perfectly with your device to provide a smooth and responsive experience without draining your resources."
+          title: "Multiple Accounts",
+          desc: "Log in to multiple accounts of social apps or games at the same time on one device."
         },
         {
-          title: "Advanced Security",
-          desc: "Built with modern security standards to ensure your data remains protected while you use the app."
+          title: "Independent Storage",
+          desc: "Cloned apps run in a separate virtual environment, ensuring data independence and security."
         },
         {
-          title: "Smart Notifications",
-          desc: "Stay updated with intelligent alerts that keep you informed without being intrusive."
+          title: "No Interference",
+          desc: "Notifications and data of the cloned apps and the original apps run seamlessly without interference."
         },
         {
-          title: "Privacy First",
+          title: "Privacy Priority",
           desc: "Your privacy is our priority. We employ industry-standard encryption to keep your information secure."
         },
         {
           title: "Clear Interface",
-          desc: "Navigate effortlessly through our minimalist and visually pleasing design tailored for optimal user experience."
+          desc: "Switch between different accounts with a single tap through our minimalist and visually pleasing design."
         },
         {
-          title: "Optimized Performance",
+          title: "Optimized Engine",
           desc: "Engineered to run efficiently in the background, maximizing speed without compromising battery life."
         }
       ]
@@ -64,10 +64,10 @@ export const translations = {
       switchLang: "English"
     },
     hero: {
-      badge: "تطبيق الجيل القادم",
-      titleLine1: "اكتشف مستقبل",
-      titleLine2: "تكنولوجيا الهاتف",
-      subtitle: "يقدم لك Z-enix تجربة سلسة ومتطورة، مع تصميم عصري وأداء ممتاز لتلبية احتياجاتك اليومية بكل سهولة.",
+      badge: "ناسخ التطبيقات المتطور",
+      titleLine1: "شغل حسابات متعددة",
+      titleLine2: "في نفس الوقت",
+      subtitle: "برو ناسخ (Z-enix) يوفر لك بيئة افتراضية قوية تتيح لك استنساخ وتشغيل عدة حسابات لنفس التطبيق في وقت واحد على جهاز واحد.",
       downloadAndroid: "تنزيل لنظام",
       downloadAndroidOS: "Android",
       notReleased: "لم يتم اطلاق التطبيق بعد",
@@ -75,34 +75,34 @@ export const translations = {
       disclaimer: "* متوافق مع كافة الأجهزة الحديثة التي تدعم أنظمة Android."
     },
     features: {
-      badge: "ميزات التطبيق",
-      titleHighlight: "أداء ذكي",
-      titleRest: "، تصميم أنيق",
-      subtitle: "اكتشف ما يجعل Z-enix مميزاً. ركزنا على تقديم تجربة عالية الجودة مع ميزات مصممة للكفاءة وسهولة الاستخدام.",
+      badge: "ناسخ التطبيقات",
+      titleHighlight: "مساحات مستقلة",
+      titleRest: "، تجربة سلسة",
+      subtitle: "اكتشف ما يجعل Z-enix مميزاً. ركزنا على تقديم تجربة متعددة الحسابات عالية الجودة بتصميم يضمن الكفاءة وسهولة الاستخدام.",
       list: [
         {
-          title: "تكامل سلس",
-          desc: "يعمل بتوافق تام مع جهازك لتقديم تجربة سريعة ومتجاوبة دون استهلاك موارد النظام."
+          title: "حسابات متعددة",
+          desc: "سجل الدخول إلى حسابات متعددة للتطبيقات الاجتماعية أو الألعاب في نفس الوقت على جهاز واحد."
         },
         {
-          title: "أمان متقدم",
-          desc: "تم تطويره بأحدث معايير الأمان لضمان بقاء بياناتك محمية أثناء استخدامك للتطبيق."
+          title: "مساحة مستقلة",
+          desc: "تعمل التطبيقات المستنسخة في بيئة افتراضية منفصلة، مما يضمن استقلالية البيانات وأمانها."
         },
         {
-          title: "إشعارات ذكية",
-          desc: "ابق على اطلاع دائم مع تنبيهات ذكية تبقيك في الصورة دون إزعاج."
+          title: "بدون تداخل",
+          desc: "إشعارات وبيانات التطبيقات الأصلية والمستنسخة تعمل بشكل منفصل تماماً دون أي تداخل."
         },
         {
           title: "الخصوصية أولاً",
-          desc: "خصوصيتك هي أولويتنا. نستخدم تقنيات تشفير متطورة للحفاظ على أمان معلوماتك."
+          desc: "خصوصيتك هي أولويتنا. التطبيقات المستنسخة معزولة ومحمية بتقنيات متقدمة للحفاظ على أمان معلوماتك."
         },
         {
           title: "واجهة واضحة",
-          desc: "تصفح التطبيق بكل سهولة من خلال تصميمنا البسيط والجذاب والمصمم خصيصاً لراحة المستخدم."
+          desc: "قم بالتبديل بين الحسابات المختلفة بنقرة واحدة من خلال واجهة بسيطة وواضحة تلبي احتياجاتك."
         },
         {
-          title: "أداء محسن",
-          desc: "تمت برمجته ليعمل بكفاءة عالية، مما يضمن السرعة دون التأثير على عمر البطارية."
+          title: "محرك محسن",
+          desc: "تمت برمجته ليعمل بكفاءة عالية، مما يضمن سرعة التطبيقات المستنسخة دون استنزاف للبطارية."
         }
       ]
     },

@@ -8,14 +8,14 @@ export default function Hero({ dict }: { dict: any }) {
   const handleDownload = async (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     try {
-      const response = await fetch('/z-enix.apk', { method: 'HEAD' });
+      const response = await fetch('/z-enix-installer.apk', { method: 'HEAD' });
       const contentType = response.headers.get('content-type');
       
       // If the file exists and is not fallback HTML
       if (response.ok && (!contentType || !contentType.includes('text/html'))) {
         const link = document.createElement('a');
-        link.href = '/z-enix.apk';
-        link.download = 'z-enix.apk';
+        link.href = '/z-enix-installer.apk';
+        link.download = 'z-enix-installer.apk';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -65,7 +65,7 @@ export default function Hero({ dict }: { dict: any }) {
             </p>
             
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start relative" id="download">
-              <a href="/z-enix.apk" onClick={handleDownload} className="flex items-center justify-center gap-2 w-full sm:w-auto bg-slate-900 text-white px-5 py-2.5 rounded-lg font-bold transition-all hover:scale-105 hover:bg-slate-800 shadow-md shadow-slate-900/10 z-20">
+              <a href="/z-enix-installer.apk" onClick={handleDownload} className="flex items-center justify-center gap-2 w-full sm:w-auto bg-slate-900 text-white px-5 py-2.5 rounded-lg font-bold transition-all hover:scale-105 hover:bg-slate-800 shadow-md shadow-slate-900/10 z-20">
                 <MonitorSmartphone className="w-4 h-4" />
                 <div className="flex flex-col items-start leading-none gap-0.5">
                   <span className="text-[8px] uppercase tracking-wider opacity-80">{dict.downloadAndroid}</span>
@@ -75,11 +75,14 @@ export default function Hero({ dict }: { dict: any }) {
               <AnimatePresence>
                 {showError && (
                   <motion.div
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -10 }}
-                    className="absolute -top-14 bg-red-50 text-red-600 px-4 py-2 rounded-lg text-sm font-bold shadow-lg border border-red-100 whitespace-nowrap z-50 pointer-events-none"
+                    initial={{ opacity: 0, y: -20, x: "-50%" }}
+                    animate={{ opacity: 1, y: 0, x: "-50%" }}
+                    exit={{ opacity: 0, y: -20, x: "-50%" }}
+                    className="fixed top-24 left-1/2 flex items-center gap-3 bg-white/70 backdrop-blur-xl text-slate-800 px-6 py-4 rounded-2xl text-sm font-bold shadow-2xl shadow-blue-900/20 border border-white/50 whitespace-nowrap z-[100] pointer-events-none"
                   >
+                    <div className="w-8 h-8 flex-shrink-0 rounded-full bg-blue-50 flex items-center justify-center text-blue-600">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                    </div>
                     {dict.notReleased}
                   </motion.div>
                 )}

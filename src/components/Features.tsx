@@ -1,8 +1,8 @@
-import { Bell, Layers, Layout, LockKeyhole, Shield, Zap } from 'lucide-react';
+import { Users, HardDrive, SplitSquareHorizontal, ShieldCheck, Layout, Zap } from 'lucide-react';
 import { motion } from 'motion/react';
 
 export default function Features({ dict }: { dict: any }) {
-  const icons = [Layers, Shield, Bell, LockKeyhole, Layout, Zap];
+  const icons = [Users, HardDrive, SplitSquareHorizontal, ShieldCheck, Layout, Zap];
   
   return (
     <section className="py-24 relative z-10" id="features">
